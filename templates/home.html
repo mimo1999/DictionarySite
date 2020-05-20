@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+<title>Search the word</title>
+<link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename='styles/style2.css') }}">
+<script language="JavaScript">
+function func() {
+var text = document.getElementById('search').value;
+window.location='search/'+ text;
+}
+</script>
+</head>
+<body>
+<div class="header">
+<h1> SearchTheWord.com</h1>
+<div class="form-box">
+<input type="text" class="search-field" placeholder="Enter the word.." id="search" name="search">
+<button class="search-btn" type="button" onclick="func()" id="myBtn">Search</button>
+</div>
+<script>
+var input = document.getElementById("search");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+});
+</script>
+</div>
+</body>
+</html>

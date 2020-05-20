@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type= "text/css" href="{{ url_for('static',filename="styles/zone.css") }}">
+</head>
+<body onload="codeAddress()">
+<div><p id="demo">You were looking for: {{value}}</p></div>
+<script language="JavaScript">
+function codeAddress() {
+	var url = 'http://127.0.0.1:6080/find/'+ "{{value}}";
+	var Http = new XMLHttpRequest();
+	Http.open("GET", url, false);
+	Http.send(null);
+  	alert(Http.responseText);
+	var exact = Http.responseText;
+	document.getElementById("demo").innerHTML = "<H1>{{value}}</H1>" + exact;
+        }
+window.onload = codeAddress;
+</script>
+</body>
+</html>

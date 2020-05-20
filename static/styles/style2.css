@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("image.jpg");
+  background-size: cover;
+backgrounf-position-center;
+display: flex;
+  justify-content:center;
+align-items:center;
+font-family:sans-serif;
+}
+h1 {
+  color: #fff;
+  margin-bottom: 70px;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-align: center;
+  
+}
+p {
+  color: red;
+}
+.search-field{
+  height: 40px;
+  width: 350px;
+  padding: 10px;
+  border: 2px;
+  border-radius: 25px;
+  outline: none;
+}
+.search-btn
+{
+  height: 40px;
+  width: 150px;
+  background: #ffeb3b;
+  border: none;
+  color: #000;
+  border-radius: 25px;
+
+}
+.search-btn:hover
+{
+  background: #ffc101;
+  cursor: pointer;
+}
+.form-box
+{
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}

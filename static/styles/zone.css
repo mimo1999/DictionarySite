@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("image2.jpg");
+  background-size: cover;
+  background-position-center;
+  display: flex;
+  justify-content:center;
+ align-items:center;
+ font-family:sans-serif;
+}
+h1 {
+  color: #fff;
+  margin-bottom: 70px;
+  font-size: 45px;
+  letter-spacing: 2px;
+  text-align: center;
+  
+}
+div {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+p {
+  color: black;
+  text-size: 20px;
+}
